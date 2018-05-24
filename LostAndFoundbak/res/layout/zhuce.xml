@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zhuce1" >
+
+    <EditText
+        android:id="@+id/editTextname"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#50000000"
+        android:ems="10"
+        android:hint="账号："
+        android:inputType="textPersonName"
+        android:maxLength="16"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <EditText
+        android:id="@+id/editTextyanzheng"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/editTexttel"
+        android:layout_alignRight="@+id/editTexttel"
+        android:layout_below="@+id/editTexttel"
+        android:layout_marginTop="15dp"
+        android:background="#50000000"
+        android:ems="10"
+        android:hint="验证码："
+        android:inputType="phone"
+        android:maxLength="6"
+        android:textColorHint="#DDDDDD" />
+
+    <Button
+        android:id="@+id/buttonsendmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextyanzheng"
+        android:layout_alignRight="@+id/editTextyanzheng"
+        android:layout_alignTop="@+id/editTextyanzheng"
+        android:background="@drawable/fabu_button"
+        android:text="获取验证码" />
+
+    <EditText
+        android:id="@+id/editTexttel"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/editTextpassword2"
+        android:layout_alignRight="@+id/editTextpassword2"
+        android:layout_below="@+id/editTextpassword2"
+        android:layout_marginTop="15dp"
+        android:background="#50000000"
+        android:ems="10"
+        android:hint="手机（必填）："
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <EditText
+        android:id="@+id/editTextpassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/editTextpassword1"
+        android:layout_below="@+id/editTextpassword1"
+        android:layout_marginTop="15dp"
+        android:background="#50000000"
+        android:ems="10"
+        android:hint="确认密码："
+        android:inputType="textPersonName|textPassword"
+        android:maxLength="12"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <EditText
+        android:id="@+id/editTextpassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/editTextname"
+        android:layout_below="@+id/editTextname"
+        android:layout_marginTop="15dp"
+        android:background="#50000000"
+        android:ems="10"
+        android:hint="密码："
+        android:inputType="textPersonName|textPassword"
+        android:maxLength="12"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" >
+
+        <requestFocus />
+    </EditText>
+
+     <Button
+        android:id="@+id/buttonsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextyanzheng"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140px"
+        android:text="确认注册"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF" />
+
+</RelativeLayout>

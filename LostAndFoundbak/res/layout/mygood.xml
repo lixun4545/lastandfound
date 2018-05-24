@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mytest"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BCD2EE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10px" >
+
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3" >
+
+            <Button
+                android:id="@+id/my_return23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9BCD9B"
+                android:text="返回" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/my_resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

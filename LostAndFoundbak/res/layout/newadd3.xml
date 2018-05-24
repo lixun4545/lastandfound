@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:background="#D1EEEE" >
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_weight="2"
+        android:text="新增公告"
+        android:textColor="#00ff00"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/goodrree3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goodbutsubmit3"
+        android:layout_alignBottom="@+id/goodbutsubmit3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="81dp"
+        android:layout_weight="2"
+        android:text="@string/btnCancel" />
+
+    <EditText
+        android:id="@+id/ediGoodname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint="公告名称:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editOther3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ediGoodname3"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="具体描述:"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/goodbutsubmit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editOther3"
+        android:layout_below="@+id/editOther3"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="63dp"
+        android:layout_weight="2"
+        android:text="@string/btnAdd" />
+
+</RelativeLayout>

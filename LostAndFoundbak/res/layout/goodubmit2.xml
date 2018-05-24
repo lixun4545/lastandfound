@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:background="#D1EEEE" >
+    
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/buttontype"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:hint="问题类别:"
+            android:inputType="none" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear1"
+        android:layout_alignRight="@+id/linear1"
+        android:layout_below="@+id/linear1"
+        android:layout_weight="2"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/ediGoodname"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:hint="问题名:"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="fill_parent"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear1"
+        android:layout_alignRight="@+id/linear1"
+        android:layout_below="@+id/linear2"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/editGoodTime"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:hint="提问时间:"
+            android:inputType="datetime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_alignLeft="@+id/linear1"
+        android:layout_alignRight="@+id/linear1"
+        android:layout_below="@+id/linear3"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/editAdress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:hint="地点:"
+            android:inputType="text"
+            android:maxLength="200" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear1"
+        android:layout_weight="2"
+        android:layout_alignRight="@+id/linear1"
+        android:layout_below="@+id/linear4"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/editOther"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:background="@null"
+            android:hint="问题描述描述:"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+<LinearLayout
+        android:id="@+id/linear6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear1"
+        android:layout_weight="2"
+        android:layout_below="@+id/linear5"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/goodimage"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+         android:layout_weight="2"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/plus" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goodrree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="2"
+        android:layout_alignBaseline="@+id/goodbutsubmit"
+        android:layout_alignBottom="@+id/goodbutsubmit"
+        android:layout_alignRight="@+id/linear3"
+        android:text="@string/btnCancel" />
+
+    <Button
+        android:id="@+id/goodbutsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="2"
+        android:layout_alignBottom="@+id/linear6"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/goodrree"
+        android:text="@string/btnAdd" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2"
+        android:text="@string/BaseInfo"
+        android:textColor="#00ff00"
+        android:textSize="28sp" />
+
+</RelativeLayout>

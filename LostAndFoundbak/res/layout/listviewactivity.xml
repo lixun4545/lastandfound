@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mytest"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BCD2EE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10px" >
+
+        <EditText
+            android:id="@+id/editgoodType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="3"
+            android:hint="类别"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editgood"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="4"
+            android:ems="8"
+            android:hint="  输入物品名称" >
+            <requestFocus />
+        </EditText>
+
+		<Button
+		    android:id="@+id/searchbutton"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+		    android:text="搜索" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>
