@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LafServerlet</servlet-name>
+    <servlet-class>com.serverlet.LafServerlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServerlet</servlet-name>
+    <servlet-class>com.serverlet.UserServerlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>imagServe</servlet-name>
+    <servlet-class>com.serverlet.imagServe</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>goodServlet</servlet-name>
+    <servlet-class>com.serverlet.goodServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LafServerlet</servlet-name>
+    <url-pattern>/servlet/LafServerlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServerlet</servlet-name>
+    <url-pattern>/servlet/UserServerlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>imagServe</servlet-name>
+    <url-pattern>/servlet/imagServe</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>goodServlet</servlet-name>
+    <url-pattern>/servlet/goodServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

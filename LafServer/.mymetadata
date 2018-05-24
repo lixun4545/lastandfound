@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="LafServer"
+  id="myeclipse.1474185676166"
+  context-root="/LafServer"
+  j2ee-spec="5.0"
+  archive="LafServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
